@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - DairyBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">DairyBasket</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="auth.html">Login/Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+   <nav class=" fixed-top nav-bar navbar navbar-expand-lg navbar-light bg-light text-white">
+  <div class="container">
+    <a class="text-white navbar-brand brand" href="index.html"><i class="fa-solid fa-basket-shopping fs-4"></i>Dairy Basket</a>
+    <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" text-white collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="tag nav-item">
+          <a class=" nav-link active text-white " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class=" tag nav-item">
+          <a class=" nav-link text-white" href="products.html">Product</a>
+        </li>
+         <li class="  nav-item dropdown">
+          <a class=" tag nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="drop-down dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="products.html#milk">Milk</a></li>
+            <li><a class="dropdown-item" href="products.html#curd">Curd</a></li>
+            <li><a class="dropdown-item" href="products.html#paneer">Paneer</a></li>
+            <li><a class="dropdown-item" href="products.html#butter">Butter</a></li>
+            <li><a class="dropdown-item" href="products.html#ghee">Ghee</a></li>
+            <li><a class="dropdown-item" href="products.html#cream">Cream</a></li>
+          </ul>
+          
+        </li>
+       
+      </ul>
+      <form class="d-flex  ">
+        <button class="login btn btn-outline-success" type="login"><a class="nav-link" href="auth.html"><i class="fa-solid fa-user"></i>Login</a></button>
+        <button class=" cart btn btn-outline-success"  type="submit"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- Page Header -->
+  <header class="text-3 py-4 text-center">
+    <h1 class="display-5 text-white fw-bold">Our Dairy Products</h1>
+    <p class="lead fw-light">Freshly made and delivered to your door</p>
+  </header>
+
+  <!-- Product Grid -->
+  <section class="  container py-5">
+    <div class="row g-4">
+
+      <!-- Product Card Example -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/milk.png" class="card-img-top" alt="Milk" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fresh Buffalo Milk</h5>
+            <p class="card-text ">₹45 / litre</p>
+            <button class="btn btn btn-outline-primary mt-auto add-to-cart "  data-id="1" data-name="Fresh Cow Milk" data-price="45">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/curd.png" class="card-img-top" alt="Curd" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Homemade Curd</h5>
+            <p class="card-text">₹40 / 500g</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="2" data-name="Homemade Curd" data-price="40">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+           <a href="product-detail.html"> <img  src="images/paneer.png" class="card-img-top" alt="Paneer"  height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fresh Paneer</h5>
+            <p class="card-text   ">₹75 / 250g</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="3" data-name="Fresh Paneer" data-price="75">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/butter.png" class="card-img-top" alt="Butter" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Creamy Butter</h5>
+            <p class="card-text">₹60 / 100g</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="4" data-name="Creamy Butter" data-price="60">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/ghee.png" class="card-img-top" alt="Ghee" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pure Desi Ghee</h5>
+            <p class="card-text">₹120 / 200ml</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="5" data-name="Pure Desi Ghee" data-price="120">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img src="images/cream.png" class="card-img-top" alt="Cream" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fresh Cream</h5>
+            <p class="card-text ">₹55 / 100ml</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="6" data-name="Fresh Cream" data-price="55">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/tonedmilk.png" class="card-img-top" alt="TonedMilk" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Toned Milk</h5>
+            <p class="card-text">₹50 / unit</p>
+            <button class="btn btn-outline-primary mt-auto add-to-cart" data-id="5" data-name="Pure Desi Ghee" data-price="120">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-sm-6 col-md-4 col-lg-3">
+       <div class="card-1 alert alert-success" role="alert card h-100">
+          <a href="product-detail.html"><img  src="images/saltedbutter.png" class="card-img-top" alt="SaltedButter" height="150px" width="100px"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Salted Butter</h5>
+            <p class="card-text">₹60 / unit</p>
+            <button class=" btn btn-outline-primary mt-auto add-to-cart" data-id="5" data-name="Pure Desi Ghee" data-price="120">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 DairyBasket. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Simple Add to Cart Logic -->
+  <script>
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', function () {
+        
+        const id = this.dataset.id;
+        const name = this.dataset.name;
+        const price = parseFloat(this.dataset.price);
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const existing = cart.find(item => item.id === id);
+        if (existing) {
+          existing.quantity += 1;
+        } else {
+          cart.push({ id, name, price, quantity: 1 });
+        }
+            cart.innerHTML=""
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${name} added to cart.`);
+               
+
+      });
+    });
+  </script>
+
+</body>
+</html>
